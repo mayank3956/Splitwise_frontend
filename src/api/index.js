@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // In production (Vercel), use the VITE_API_URL env var pointing to Render backend.
-// In development, use the Vite proxy (/api → localhost:5001).
+// In development, use the Vite proxy (/api → https://spliwise-backend-5rgu.onrender.com).
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : '/api',
 })

@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:5001',
+        target: 'https://spliwise-backend-5rgu.onrender.com',
         changeOrigin: true,
       },
     },
